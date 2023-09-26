@@ -5,11 +5,19 @@ const { Tag, Product, ProductTag } = require('../../models');
 
 router.get('/', (req, res) => {
   // find all tags
+  Tag.findAll()
+  .then((data) => res.json(data))
+  .catch((err) => console.log(err))
   // be sure to include its associated Product data
 });
 
 router.get('/:id', (req, res) => {
   // find a single tag by its `id`
+  Tag.findOne({
+    where: {id: req.params.id}
+  })
+  .then((data) => res.send(data))
+  .catch((err) => console.log(err))
   // be sure to include its associated Product data
 });
 
