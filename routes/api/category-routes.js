@@ -34,7 +34,7 @@ router.put("/:id", (req, res) => {
 
 router.delete("/:id", (req, res) => {
   Category.destroy({ where: { id: req.params.id } })
-    .then(() => console.log("Category deleted!"))
+    .then((data) => res.json(data))
     .catch((err) => console.log(err));
 });
 

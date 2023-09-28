@@ -34,7 +34,7 @@ router.put("/:id", (req, res) => {
 
 router.delete("/:id", (req, res) => {
   Tag.destroy({ where: { id: req.params.id } })
-    .then(() => console.log("Tag deleted!"))
+    .then((data) => res.json(data))
     .catch((err) => console.log(err));
 });
 
