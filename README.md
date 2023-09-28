@@ -1,6 +1,8 @@
 # Threads eCommerce API
   ![github-license](https://img.shields.io/badge/License-MIT-blue.svg)
 
+  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/dhrnMTZoAfE/0.jpg)](https://www.youtube.com/watch?v=dhrnMTZoAfE)
+
   ## Description
   Threads eCommerce is a REST API tailored for use by ecommerce platforms. The user can perform a variety of CRUD operations by calling the endpoints specified in the Usage section.
 
